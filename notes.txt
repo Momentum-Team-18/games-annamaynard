@@ -1,0 +1,7 @@
+classes - deck, card, dealer, player, game
+create the deck 
+shuffle 
+add player and dealer 
+deal cards 
+play hand 
+
