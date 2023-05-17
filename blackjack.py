@@ -1,7 +1,7 @@
 import random
 
-MY_SUITS = ['♥️', '♠️', '♦️', '♣️']
-MY_RANKS = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
+suits = ['♥️', '♠️', '♦️', '♣️']
+ranks = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
 
 
 class Card:
@@ -12,7 +12,7 @@ class Card:
     def __str__(self):
         return f'{self.rank} of {self.suit}'
     
-    
+
 class Deck:
     def __init__(self, suits, ranks):
         self.cards = []
@@ -20,6 +20,7 @@ class Deck:
             for rank in ranks:
                 new_card = Card(suit, rank)
                 self.cards.append(new_card)
+                
     
     def __str__(self):
         deck_string = ' '
@@ -42,7 +43,7 @@ class Dealer:
         self.hand.append(card)
 
 
-class Player: 
+class Player:
     def __init__(self, name):
         self.hand = []
         self.name = name
@@ -86,7 +87,7 @@ class Game:
             print(card)
 
 
-new_game = Game(MY_SUITS, MY_RANKS)
+new_game = Game(suits, ranks)
 
 
 
