@@ -4,6 +4,7 @@ MY_CHOICE = ['rock', 'paper', 'scissors']
 
 
 class Player:
+    
     def __init__(self, name, human):
         self.choices = []
         self.name = name
