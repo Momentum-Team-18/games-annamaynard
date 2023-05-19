@@ -103,7 +103,7 @@ class Game:
                 if len(self.player.hand) > 0 and len(self.dealer.hand) > 0:
                     player_final_card = self.player.hand.pop(0)
                     dealer_final_card = self.dealer.hand.pop(0)
-                    tie_cards.extend([player_final_card, dealer_final])
+                    tie_cards.extend([player_final_card, dealer_final_card])
 
 
         # Append the cards to the hand of the higher-ranking player
