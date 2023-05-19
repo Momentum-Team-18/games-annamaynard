@@ -16,7 +16,7 @@ class Player:
         if self.human:
             choice = input("rock, paper, or scissors?")
             self.choices.append(choice)
-
+    
     def random_choice(self):
         if not self.human:
             random_choice = random.choice(MY_CHOICE)
